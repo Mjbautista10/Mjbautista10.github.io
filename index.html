@@ -6,26 +6,30 @@
     <title>MMM Innovation - Hardware & Software Support</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
     <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo-container">
-                    <a href="#" class="logo">MMM <span>Innovation</span></a>
-                    <div class="dropdown">
-                        <div class="dropdown-content">
-                            <h3>About Us</h3>
-                            <p><strong>Mission:</strong> To provide reliable and efficient technical solutions that empower individuals and businesses through innovation.</p>
-                            <p><strong>Vision:</strong> To be the leading provider of hardware and software solutions, ensuring technology is accessible to everyone.</p>
-                        </div>
-                    </div>
-                </div>
+                <a href="#top" class="logo">MMM <span>Innovation</span></a>
                 <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
                 <ul class="nav-links">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#application">Get Support</a></li>
                     <li><a href="#news">Tech News</a></li>
+                    <li class="dropdown">
+                        <a href="#">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h3>Mission</h3>
+                                <p>To provide innovative and reliable technical solutions for individuals and businesses.</p>
+                            </li>
+                            <li>
+                                <h3>Vision</h3>
+                                <p>To be the leading provider of hardware and software support, empowering users with seamless technology experiences.</p>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
@@ -33,54 +37,61 @@
     </header>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const logoContainer = document.querySelector(".logo-container");
-            const dropdown = document.querySelector(".dropdown");
-
-            logoContainer.addEventListener("mouseenter", () => {
-                dropdown.style.display = "block";
-            });
-
-            logoContainer.addEventListener("mouseleave", () => {
-                dropdown.style.display = "none";
-            });
-        });
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
     </script>
 
     <style>
-        .logo-container {
+        /* Dropdown Styles */
+        .dropdown {
             position: relative;
             display: inline-block;
         }
 
-        .dropdown {
+        .dropdown-menu {
             display: none;
             position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            width: 250px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            min-width: 250px;
             border-radius: 5px;
             z-index: 1000;
         }
 
-        .dropdown-content {
-            font-size: 14px;
-            color: #333;
+        .dropdown:hover .dropdown-menu {
+            display: block;
         }
 
-        .dropdown-content h3 {
+        .dropdown-menu li {
+            list-style: none;
+            padding: 8px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu h3 {
             margin: 0;
             font-size: 16px;
             font-weight: bold;
         }
 
-        .dropdown-content p {
-            margin: 5px 0;
+        .dropdown-menu p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
         }
     </style>
-
 </body>
 </html>
