@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMM Innovation - Hardware & Software Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">MMM <span>Innovation</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#application">Get Support</a></li>
+                    <li><a href="#news">Tech News</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p> <span style="font-family: 'Courier New', monospace; font-size: 40px;">🛠 Fast Fixes</span></p>
+                        </div>
+                        <div class="card-back">
+                            <p> <span style="font-family: 'Georgia', serif; font-size: 40px;"> 💡 Smart Solutions</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Whether it's hardware troubleshooting or software glitches, our team of specialists at MMM Innovation is ready to help you get back up and running.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Technical Services</h2>
+                <p>MMM Innovation provides comprehensive solutions for all your hardware and software needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">💻</div>
+                    <div class="service-content">
+                        <h3>Computer Repair</h3>
+                        <p>Expert diagnosis and repair for desktops, laptops, and all-in-one systems. We fix hardware issues fast.</p>
+                        <a href="#application" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">🖥️</div>
+                    <div class="service-content">
+                        <h3>Software Troubleshooting</h3>
+                        <p>From operating system errors to application crashes, we'll resolve your software issues efficiently.</p>
+                        <a href="#application" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">🔒</div>
+                    <div class="service-content">
+                        <h3>Security Solutions</h3>
+                        <p>Protect your data and systems with our comprehensive security services and malware removal.</p>
+                        <a href="#application" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">📱</div>
+                    <div class="service-content">
+                        <h3>Mobile Device Support</h3>
+                        <p>Expert assistance for smartphone and tablet issues, both hardware and software related.</p>
+                        <a href="#application" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">🔌</div>
+                    <div class="service-content">
+                        <h3>Network Setup & Repair</h3>
+                        <p>Wi-Fi issues, connectivity problems, and network setup services for home and small businesses.</p>
+                        <a href="#application" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">☁️</div>
+                    <div class="service-content">
+                        <h3>Data Recovery & Backup</h3>
+                        <p>Professional data recovery services and setup of reliable backup solutions for peace of mind.</p>
+                        <a href="#application" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="application" class="application">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Technical Support</h2>
+                <p>Fill out the form below to request assistance with your hardware or software issue</p>
+            </div>
+            <div class="form-container">
+                <form id="support-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="issue-type">Issue Type</label>
+                        <select id="issue-type" class="form-control" required>
+                            <option value="">Select Issue Type</option>
+                            <option value="hardware">Hardware Problem</option>
+                            <option value="software">Software Problem</option>
+                            <option value="network">Network Issue</option>
+                            <option value="security">Security Concern</option>
+                            <option value="data">Data Recovery</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="device">Device Information</label>
+                        <input type="text" id="device" class="form-control" placeholder="e.g. Dell XPS 15, iPhone 14, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Detailed Description of the Issue</label>
+                        <textarea id="description" class="form-control" required placeholder="Please describe the problem in detail, including any error messages you're seeing."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button-submit">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Tech News</h2>
+                <p>Stay updated with the latest technology trends and solutions from MMM Innovation</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5URSXzbLNJk0CcjFp-3v8TjYg7f9zL2alxw&s" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">February 25, 2025</div>
+                        <h3>New Windows Security Update Patches Critical Vulnerabilities</h3>
+                        <p>Microsoft released an important security update that addresses several critical vulnerabilities. Users are advised to update immediately.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1PrPZQH-M44I_HNCBFqZTILZUdo-dDkkXA&s" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">February 20, 2025</div>
+                        <h3>Top 10 Computer Maintenance Tips for Extended Hardware Life</h3>
+                        <p>Regular maintenance can significantly extend the lifespan of your computer. Learn our top tips for keeping your hardware running smoothly.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="https://www.devicecure.in/_next/image?url=https%3A%2F%2Fdevicecurebucket.s3.ap-south-1.amazonaws.com%2Fblog%2F1684942329533Common%2520Mobile%2520Issues.png&w=3840&q=75" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">February 15, 2025</div>
+                        <h3>Common Smartphone Issues and How to Fix Them Yourself</h3>
+                        <p>From battery problems to slow performance, learn how to diagnose and fix common smartphone issues without professional help.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get in Touch</h2>
+                <p>Questions or concerns? Reach out to our support team at MMM Innovation</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <p>CSA, COLLEGE OF SAINT AMATIEL </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <p>support@mmminnovation.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <p>Monday - Friday: 8am - 6pm</p>
+                            <p>Saturday: 9am - 2pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In the <head> section, add this line to import Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScQjxB78RBALPhYNNqjtETE_BEpLHPta_Q_KzylTYsrksl8nw/viewform" target="_blank">Apply Now</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="social-icon" data-platform="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" data-platform="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" data-platform="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" data-platform="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>© 2025 MMM Innovation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
