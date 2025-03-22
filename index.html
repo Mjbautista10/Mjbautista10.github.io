@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMM Innovation - Hardware & Software Support</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
-<body id="top">
-
+<body>
     <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#top" class="logo">MMM <span>Innovation</span></a>
+                <a href="#" class="logo" onclick="scrollToTop()">MMM <span>Innovation</span></a>
                 <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
                 <ul class="nav-links">
                     <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropbtn">About Us ⌄</a>
-                        <div class="dropdown-content">
-                            <a href="#mission">Our Mission</a>
-                            <a href="#vision">Our Vision</a>
-                        </div>
+                        <a href="#">About Us ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#mission">Mission</a></li>
+                            <li><a href="#vision">Vision</a></li>
+                        </ul>
                     </li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#application">Get Support</a></li>
@@ -32,52 +30,29 @@
         </div>
     </header>
 
-    <!-- Mission and Vision Sections -->
-    <section id="mission" class="about">
+    <!-- Mission and Vision Section -->
+    <section id="mission" class="about-section">
         <div class="container">
-            <h2>Our Mission</h2>
-            <p>At MMM Innovation, our mission is to provide top-notch technical support and innovative solutions for hardware and software issues, making technology accessible and hassle-free for everyone.</p>
+            <div class="section-title">
+                <h2>Our Mission</h2>
+                <p>To provide top-tier hardware and software solutions that empower individuals and businesses to operate seamlessly.</p>
+            </div>
         </div>
     </section>
 
-    <section id="vision" class="about">
+    <section id="vision" class="about-section">
         <div class="container">
-            <h2>Our Vision</h2>
-            <p>We envision a future where technology empowers individuals and businesses, with seamless support that ensures efficiency, security, and innovation in every digital experience.</p>
+            <div class="section-title">
+                <h2>Our Vision</h2>
+                <p>To be the leading provider of innovative and user-friendly IT solutions, making technology accessible to everyone.</p>
+            </div>
         </div>
     </section>
 
-    <style>
-        /* Dropdown Styling */
-        .dropdown {
-            position: relative;
-            display: inline-block;
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 10px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
-
+    </script>
 </body>
 </html>
