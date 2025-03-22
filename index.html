@@ -3,7 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMM Innovation - Hardware & Software Support</title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMM Innovation - Hardware & Software Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#top" class="logo">MMM <span>Innovation</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#application">Get Support</a></li>
+                    <li><a href="#news">Tech News</a></li>
+                    <li class="dropdown">
+                        <a href="#">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h3>Mission</h3>
+                                <p>We, at MMM Innovation, are here to make technology simple for everyone. Our team is dedicated to Maintaining your laptop’s health, Managing issues with ease, and Maximizing performance so you can focus on what matters. With fast fixes and smart solutions, we ensure your device runs smoothly, no tech skills required.</p>
+                            </li>
+                            <li>
+                                <h3>Vision</h3>
+                                <p>We envision a world where anyone, regardless of tech knowledge, can use their laptop without stress. As a team, we strive to be the friendly experts who keep your device in top shape, helping you stay connected, productive, and worry-free</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+    <style>
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            min-width: 250px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+            padding: 8px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .dropdown-menu p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</body>
+</html>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
